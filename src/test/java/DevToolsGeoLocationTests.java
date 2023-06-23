@@ -5,7 +5,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v103.emulation.Emulation;
+import org.openqa.selenium.devtools.v114.emulation.Emulation;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,6 +30,7 @@ public class DevToolsGeoLocationTests {
         driver.manage().window().maximize();
         DevTools devTools = ((ChromeDriver)driver).getDevTools();
         devTools.createSession();
+        Emulation Emulation = new Emulation();
         devTools.send(Emulation.setGeolocationOverride(Optional.of(52.520008),
                 Optional.of(13.404954),
                 Optional.of(1)));

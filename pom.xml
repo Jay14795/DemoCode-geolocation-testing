@@ -14,12 +14,13 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v114 -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v102</artifactId>
-            <version>4.3.0</version>
-            <scope>test</scope>
+            <artifactId>selenium-devtools-v114</artifactId>
+            <version>4.10.0</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
